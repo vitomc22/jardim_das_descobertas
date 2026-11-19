@@ -1,0 +1,4 @@
+# RK3562 = 4x Cortex-A53. NEON já é baseline no aarch64; target-cpu ajusta o
+# escalonamento de instruções para o núcleo real.
+[target.aarch64-linux-android]
+rustflags = ["-C", "target-cpu=cortex-a53", "-C", "link-arg=-Wl,-z,max-page-size=16384"]

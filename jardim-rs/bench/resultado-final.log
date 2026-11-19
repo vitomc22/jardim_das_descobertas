@@ -1,0 +1,10 @@
+rodada 1 webview: start=1379ms frames=569 cpu=738 pss=174420
+rodada 1 rust: start=525ms frames=475 cpu=321 pss=51302
+rodada 2 rust: start=509ms frames=481 cpu=325 pss=51777
+rodada 2 webview: start=1104ms frames=573 cpu=805 pss=182028
+rodada 3 webview: start=1074ms frames=587 cpu=830 pss=182916
+rodada 3 rust: start=477ms frames=473 cpu=319 pss=51608
+rodada 4 rust: start=538ms frames=461 cpu=317 pss=51913
+rodada 4 webview: start=1096ms frames=590 cpu=804 pss=182778
+rodada 5 webview: start=1086ms frames=571 cpu=814 pss=183102
+rodada 5 rust: start=645ms frames=457 cpu=316 pss=48207

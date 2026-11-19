@@ -1,0 +1,48 @@
+[package]
+name = "jardim"
+version = "0.3.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "jardim"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+egui = { version = "=0.31.1", features = ["bytemuck"] }
+resvg = { version = "0.45", default-features = false, features = ["text"] }
+rayon = "1.10"
+bytemuck = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+getrandom = "0.2"
+log = "0.4"
+
+[target.'cfg(target_os = "android")'.dependencies]
+eframe = { version = "=0.31.1", default-features = false, features = ["glow", "android-native-activity", "default_fonts"] }
+jni = "0.21"
+android_logger = "0.14"
+winit = { version = "0.30", default-features = false, features = ["android-native-activity", "rwh_06"] }
+
+[features]
+trace = []
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+debug = false
+incremental = false
+
+# Perfil para profiling (simpleperf): igual ao release, mas com símbolos.
+[profile.profiling]
+inherits = "release"
+strip = false
+debug = "line-tables-only"
+
+[patch.crates-io]
+egui-winit = { path = "vendor/egui-winit" }
+egui_glow = { path = "vendor/egui_glow" }
