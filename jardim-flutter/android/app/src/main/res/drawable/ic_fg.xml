@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Jardim (Flutter): fundo azul, folha clara e a "seta" do Flutter no canto. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+  <group android:scaleX="0.62" android:scaleY="0.62" android:pivotX="54" android:pivotY="54">
+    <path android:pathData="M54,85V46" android:strokeColor="#e6f6ff" android:strokeWidth="6" android:strokeLineCap="round" />
+    <path android:fillColor="#9fdcff" android:pathData="M54,65Q15,68 20,30Q57,26 54,65" />
+    <path android:fillColor="#e6f6ff" android:pathData="M54,48Q49,17 87,20Q90,52 54,48" />
+    <path android:fillColor="#54c5f8" android:pathData="M86,58L98,58L82,74L76,68Z" />
+    <path android:fillColor="#ffffff" android:pathData="M76,80L82,74L98,90L86,90Z" />
+  </group>
+</vector>

@@ -1,0 +1,9 @@
+org.jardim.descobertas.kt.app-pngs-0 /home/victor/Documentos/git/jardim/jardim-kotlin/app/build/generated/res/pngs/release
+org.jardim.descobertas.kt.app-updated_navigation_xml-1 /home/victor/Documentos/git/jardim/jardim-kotlin/app/build/generated/updated_navigation_xml/release
+org.jardim.descobertas.kt.app-packageReleaseResources-2 /home/victor/Documentos/git/jardim/jardim-kotlin/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+org.jardim.descobertas.kt.app-packageReleaseResources-3 /home/victor/Documentos/git/jardim/jardim-kotlin/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+org.jardim.descobertas.kt.app-merged-not-compiled-resources-4 /home/victor/Documentos/git/jardim/jardim-kotlin/app/build/intermediates/merged-not-compiled-resources/release
+org.jardim.descobertas.kt.app-release-5 /home/victor/Documentos/git/jardim/jardim-kotlin/app/build/intermediates/merged_res/release/mergeReleaseResources
+org.jardim.descobertas.kt.app-main-6 /home/victor/Documentos/git/jardim/jardim-kotlin/app/src/main/res
+org.jardim.descobertas.kt.app-release-7 /home/victor/Documentos/git/jardim/jardim-kotlin/app/src/release/res
+gradleHome-0 /home/victor/.gradle

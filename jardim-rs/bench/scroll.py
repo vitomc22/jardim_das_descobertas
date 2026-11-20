@@ -8,6 +8,9 @@ PKG, COMP = {
     "webview": ("org.jardim.descobertas", "org.jardim.descobertas/.MainActivity"),
     "rust": ("org.jardim.descobertas.rs", "org.jardim.descobertas.rs/android.app.NativeActivity"),
     "qt": ("org.jardim.descobertas.qt", "org.jardim.descobertas.qt/org.qtproject.qt.android.bindings.QtActivity"),
+    "flutter": ("org.jardim.descobertas.flutter", "org.jardim.descobertas.flutter/org.jardim.descobertas.jardim.MainActivity"),
+    "rn": ("org.jardim.descobertas.rn", "org.jardim.descobertas.rn/.MainActivity"),
+    "kotlin": ("org.jardim.descobertas.kt", "org.jardim.descobertas.kt/.MainActivity"),
 }[APP]
 sh = lambda c: subprocess.run(["adb", "-s", S, "shell", c], capture_output=True, text=True).stdout
 sh(f"am start -S -W -n {COMP}")

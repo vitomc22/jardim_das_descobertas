@@ -1,18 +1,30 @@
 #!/usr/bin/env bash
 # Grava o MESMO roteiro em cada app: abertura a frio → rolar → abrir atividade
 # → responder → voltar. Sem medições aqui (o screenrecord consome CPU/GPU).
-# Uso: record.sh <serial> [app...]   apps: webview rust qt (padrão: todos)
+# Uso: record.sh <serial> [app...]   apps: webview rust qt flutter rn kotlin (padrão: todos)
 set -euo pipefail
 S=${1:?serial}; shift
-APPS=("${@:-webview rust qt}"); [ $# -eq 0 ] && APPS=(webview rust qt)
+APPS=("$@"); [ $# -eq 0 ] && APPS=(webview rust qt flutter rn kotlin)
 OUT=$(cd "$(dirname "$0")" && pwd)/video
 mkdir -p "$OUT"
 a() { adb -s "$S" shell "$@"; }
 
-declare -A PKG=([webview]=org.jardim.descobertas [rust]=org.jardim.descobertas.rs [qt]=org.jardim.descobertas.qt)
-declare -A COMP=([webview]=org.jardim.descobertas/.MainActivity
-                 [rust]=org.jardim.descobertas.rs/android.app.NativeActivity
-                 [qt]=org.jardim.descobertas.qt/org.qtproject.qt.android.bindings.QtActivity)
+declare -A PKG=(
+  [webview]=org.jardim.descobertas
+  [rust]=org.jardim.descobertas.rs
+  [qt]=org.jardim.descobertas.qt
+  [flutter]=org.jardim.descobertas.flutter
+  [rn]=org.jardim.descobertas.rn
+  [kotlin]=org.jardim.descobertas.kt
+)
+declare -A COMP=(
+  [webview]=org.jardim.descobertas/.MainActivity
+  [rust]=org.jardim.descobertas.rs/android.app.NativeActivity
+  [qt]=org.jardim.descobertas.qt/org.qtproject.qt.android.bindings.QtActivity
+  [flutter]=org.jardim.descobertas.flutter/org.jardim.descobertas.jardim.MainActivity
+  [rn]=org.jardim.descobertas.rn/.MainActivity
+  [kotlin]=org.jardim.descobertas.kt/.MainActivity
+)
 
 for name in "${APPS[@]}"; do
   a am force-stop "${PKG[$name]}"; sleep 2

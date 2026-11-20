@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+color ic_bg
+color paper
+drawable ic_fg
+mipmap ic_launcher
+style Theme.Jardim

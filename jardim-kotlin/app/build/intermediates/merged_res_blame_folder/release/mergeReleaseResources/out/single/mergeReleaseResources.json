@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "org.jardim.descobertas.kt.app-release-40:/drawable_ic_fg.xml.flat",
+        "source": "org.jardim.descobertas.kt.app-main-41:/drawable/ic_fg.xml"
+    },
+    {
+        "merged": "org.jardim.descobertas.kt.app-release-40:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "org.jardim.descobertas.kt.app-main-41:/mipmap-anydpi-v26/ic_launcher.xml"
+    }
+]

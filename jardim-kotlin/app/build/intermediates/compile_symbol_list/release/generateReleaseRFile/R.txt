@@ -1,0 +1,5 @@
+int color ic_bg 0x0
+int color paper 0x0
+int drawable ic_fg 0x0
+int mipmap ic_launcher 0x0
+int style Theme_Jardim 0x0

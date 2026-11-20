@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Jardim" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/paper</item>
+    </style>
+    <color name="paper">#f8f6ee</color>
+    <color name="ic_bg">#7f52ff</color>
+</resources>

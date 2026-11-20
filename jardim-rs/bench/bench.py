@@ -18,6 +18,9 @@ APPS = {
     "webview": ("org.jardim.descobertas", "org.jardim.descobertas/.MainActivity"),
     "rust": ("org.jardim.descobertas.rs", "org.jardim.descobertas.rs/android.app.NativeActivity"),
     "qt": ("org.jardim.descobertas.qt", "org.jardim.descobertas.qt/org.qtproject.qt.android.bindings.QtActivity"),
+    "flutter": ("org.jardim.descobertas.flutter", "org.jardim.descobertas.flutter/org.jardim.descobertas.jardim.MainActivity"),
+    "rn": ("org.jardim.descobertas.rn", "org.jardim.descobertas.rn/.MainActivity"),
+    "kotlin": ("org.jardim.descobertas.kt", "org.jardim.descobertas.kt/.MainActivity"),
 }
 VSYNC_MS = 1000 / 60
 

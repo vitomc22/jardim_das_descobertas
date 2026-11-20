@@ -1,0 +1,6 @@
+org.jardim.descobertas.kt
+color ic_bg
+color paper
+drawable ic_fg
+mipmap ic_launcher
+style Theme_Jardim
